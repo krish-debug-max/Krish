@@ -304,15 +304,16 @@ a:hover{
 }
 
 #contact{
-    width: 95%;
+      width: 95%;
+    height: 100vh;
     height: fit-content;
     background-color: var(--bg-card);
     border-radius: 20px;
     margin:10vh auto;
-    padding: 20vh;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     
 
 }
