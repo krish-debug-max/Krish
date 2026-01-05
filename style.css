@@ -305,7 +305,7 @@ a:hover{
 
 #contact{
     width: 95%;
-    height: 100vh;
+    height: fit-content;
     background-color: var(--bg-card);
     border-radius: 20px;
     margin:10vh auto;
