@@ -69,37 +69,37 @@
                 <div class="card-image">🎬</div>
                 <h3>Cinematic Edit - Angle</h3>
                 <p> smooth transiton and color grading </p>
-                <button onclick="openVideo('C:\Users\PC\OneDrive\Documents\krish code\Krish Personal website Portfolio\Color Matte.mp4')">View</button>
+                <button onclick="openProject('https://www.instagram.com/reel/DRMcniKka-u/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">View</button>
             </div>
             <div id="cardu" class="v">
                 <div class="card-image">🖼️</div>
                 <h3>Painting with Deep Meaning</h3>
                 <p>Art discribing with effects and substitle </p>
-                <button>View</button>
+                <button onclick="openProject('https://www.instagram.com/reel/DRcPOXlEheB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">View</button>
             </div>
             <div id="cardu" class="w">
                 <div class="card-image">💻</div>
                 <h3>Modern Portfolio Site</h3>
                 <p>Responsive dark-themed portfolio with animations </p>
-                <button>View</button>
+                <button onclick="showMsg()">View</button>
             </div>
             <div id="cardu" class="w" >
                 <div class="card-image">🍔</div>
                 <h3>Foody website </h3>
                 <p>Informative good looking Page</p>
-                <button>View</button>
+                <button onclick="openProject('https://krish-debug-max.github.io/Hunger-house/')">View</button>
             </div>
             <div id="cardu" class="w">
                 <div class="card-image">🌐</div>
                 <h3>Business Landing Page</h3>
                 <p>Clean landing page with smooth scroll effects </p>
-                <button>View</button>
+                <button onclick="openProject(' https://krish-debug-max.github.io/Kunal-Upvc-Window-Service-Center-/')">View</button>
             </div>
             <div id="cardu" class="v">
                 <div class="card-image">📱</div>
                 <h3>Instagram Reels Pack</h3>
                 <p>Trendy reels with zooms and overlays </p>
-                <button>View</button>
+                <button onclick="openProject('https://www.instagram.com/reel/DI4NrOoz44E/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">View</button>
             </div>
             
         </div>
@@ -119,13 +119,31 @@
     <textarea name="message" required placeholder="I got work For you"></textarea><br>
     
     <button type="submit">Send Message</button>
+
+   
 </form>
+
+    
+
 </div>
     <footer>
         <p>© 2024 Krish. All rights reserved. Built with passion.</p>
     </footer>   
     
     <script>
+
+    function showMsg(){
+        alert("You are ON it !")
+    }
+
+    function openProject(link) {
+    window.open(link, "_blank");
+        }
+
+    function openVideo(path) {
+    window.open(path, "_blank");
+    }
+
 function filterPortfolio(type) {
     // Select all portfolio cards (your code uses id="cardu" multiple times, so we target them by querySelectorAll)
     const cards = document.querySelectorAll("#cardu");
