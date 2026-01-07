@@ -80,9 +80,7 @@ header h3{
         }
 
 .nav-links li a{
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
+  
     transition: .2s;
     
 }
