@@ -1,176 +1,205 @@
+<!DOCTYPE html>
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <head>
         <title>Krish Portfolio</title>
-       <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
-    <header class="fade-in">
-        <h3>Krish</h3>
-        <ul>
-            <li><a href="#profile">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
-    <div id="profile" class="fade-in">
-        <h1>Krish - Video Editor & <br> Front-End Developer</h1>
-        <p>I create visuals and modern web experiences</p>
-      <a href="#portfolio" id="uff">  <button id="visit">View My Work</button> </a>
-    </div>
-    <div id="about" class="fade-in">
-        
-     <h1>About me</h1>
-     
-     <p>I'm Krish, a passionate Video Editor and Front-End Developer. I create clean, emotional and <br> aesthetic edits, and Built mordern responsive website using HTML, CSS, and JavaScript. <br> My style focuses on storytelling, smooth visuals , and pixel-perfect design </p>   
-    </div>
-    <h1>Services</h1>
-    <div id="services" class="fade-in">
-        <div id="line"></div>
-        <div id="service-card">
-            
-            <h2>Video Editing</h2>
-            <ul>
-                <li>Aesthetic & emotional edits</li>
-                <li>Gaming edits</li>
-                <li>Vlogs & wedding videos</li>
-                <li>Reels, transitions, overlays, zooms</li>
-                <li>Smooth pacing & color enhancement</li>
-            </ul>
-        </div>
-        <div id="service-card">
-        
-            <h2>Front-End Development</h2>
-            <ul>
-                <li>Portfolio websites</li>
-                <li>Dark UI/UX designs</li>
-                <li>Responsive layouts</li>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Fast performance and clean code </li>
-            </ul> 
-        </div>
-    </div>
-    
-        <h1 id="head" >portfolio</h1>
-        <div id="line"></div>
-        <div class="button">
-        <div class="button">
-        <button id="k" onclick="filterPortfolio('all')" class="active">All</button>
-        <button id="k" onclick="filterPortfolio('v')">Video Editing</button>
-        <button id="k" onclick="filterPortfolio('w')">Website Projects</button>
-        </div>
-        </div>
-        <div id="portfolio" class="fade-in">
-        <div id="card">
-            <div id="cardu" class="v">
-                <div class="card-image">🎬</div>
-                <h3>Cinematic Edit - Angle</h3>
-                <p> smooth transiton and color grading </p>
-                <button onclick="openProject('https://www.instagram.com/reel/DRMcniKka-u/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">View</button>
-            </div>
-            <div id="cardu" class="v">
-                <div class="card-image">🖼️</div>
-                <h3>Painting with Deep Meaning</h3>
-                <p>Art discribing with effects and substitle </p>
-                <button onclick="openProject('https://www.instagram.com/reel/DRcPOXlEheB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">View</button>
-            </div>
-            <div id="cardu" class="w">
-                <div class="card-image">💻</div>
-                <h3>Modern Portfolio Site</h3>
-                <p>Responsive dark-themed portfolio with animations </p>
-                <button onclick="showMsg()">View</button>
-            </div>
-            <div id="cardu" class="w" >
-                <div class="card-image">🍔</div>
-                <h3>Foody website </h3>
-                <p>Informative good looking Page</p>
-                <button onclick="openProject('https://krish-debug-max.github.io/Hunger-house/')">View</button>
-            </div>
-            <div id="cardu" class="w">
-                <div class="card-image">🌐</div>
-                <h3>Business Landing Page</h3>
-                <p>Clean landing page with smooth scroll effects </p>
-                <button onclick="openProject(' https://krish-debug-max.github.io/Kunal-Upvc-Window-Service-Center-/')">View</button>
-            </div>
-            <div id="cardu" class="v">
-                <div class="card-image">📱</div>
-                <h3>Instagram Reels Pack</h3>
-                <p>Trendy reels with zooms and overlays </p>
-                <button onclick="openProject('https://www.instagram.com/reel/DI4NrOoz44E/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">View</button>
-            </div>
-            
-        </div>
-    </div>
- <div id="contact" class="fade-in">
-    <h3>Let's Build Something Amazing</h3>
-    
-    <!-- Wrap in form tag -->
-   <form id="contact-form" action="https://formspree.io/f/meoyvkpj" method="POST">
-    <label>Name</label><br>
-    <input type="text" name="name" required placeholder="Arush"><br>
-    
-    <label>Email</label><br>
-    <input type="email" name="email" required placeholder="abc@gmail.com"><br>
-    
-    <label>Message</label><br>
-    <textarea name="message" required placeholder="I got work For you"></textarea><br>
-    
-    <button type="submit">Send Message</button>
 
-   
-</form>
+<header class="fade-in">
+    <h3>Krish</h3>
+     <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#profile">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
 
-    
-
+<div id="profile" class="fade-in">
+    <h1>Krish - Video Editor & <br> Front-End Developer</h1>
+    <p>I create visuals and modern web experiences</p>
+  <a href="#portfolio" id="uff">  <button id="visit">View My Work</button> </a>
 </div>
-    <footer>
-        <p>© 2024 Krish. All rights reserved. Built with passion.</p>
-    </footer>   
+
+<div id="about" class="fade-in">
+ <h1>About me</h1>
+ <p>I'm Krish, a passionate Video Editor and Front-End Developer. I create clean, emotional and <br> aesthetic edits, and Built mordern responsive website using HTML, CSS, and JavaScript. <br> My style focuses on storytelling, smooth visuals , and pixel-perfect design </p>   
+</div>
+
+<h1>Services</h1>
+
+<div id="services" class="fade-in">
+    <div id="line"></div>
+    <div id="service-card">
+        <h2>Video Editing</h2>
+        <ul>
+            <li>Aesthetic & emotional edits</li>
+            <li>Gaming edits</li>
+            <li>Vlogs & wedding videos</li>
+            <li>Reels, transitions, overlays, zooms</li>
+            <li>Smooth pacing & color enhancement</li>
+        </ul>
+    </div>
+
+    <div id="service-card">
+        <h2>Front-End Development</h2>
+        <ul>
+            <li>Portfolio websites</li>
+            <li>Dark UI/UX designs</li>
+            <li>Responsive layouts</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Fast performance and clean code </li>
+        </ul> 
+    </div>
+</div>
+
+<h1 id="head">portfolio</h1>
+<div id="line"></div>
+
+<div class="button">
+    <button id="k" onclick="filterPortfolio('all')" class="active">All</button>
+    <button id="k" onclick="filterPortfolio('v')">Video Editing</button>
+    <button id="k" onclick="filterPortfolio('w')">Website Projects</button>
+</div>
+
+<div id="portfolio" class="fade-in">
+    <div id="card">
+
+        <div id="cardu" class="v">
+            <div class="card-image">🎬</div>
+            <h3>Cinematic Edit - Angle</h3>
+            <p> smooth transiton and color grading </p>
+            <button onclick="openProject('https://www.instagram.com/reel/DRMcniKka-u/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">View</button>
+        </div>
+
+        <div id="cardu" class="v">
+            <div class="card-image">🖼️</div>
+            <h3>Painting with Deep Meaning</h3>
+            <p>Art discribing with effects and substitle </p>
+            <button onclick="openProject('https://www.instagram.com/reel/DRcPOXlEheB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">View</button>
+        </div>
+
+        <div id="cardu" class="w">
+            <div class="card-image">💻</div>
+            <h3>Modern Portfolio Site</h3>
+            <p>Responsive dark-themed portfolio with animations </p>
+            <button onclick="showMsg()">View</button>
+        </div>
+
+        <div id="cardu" class="w">
+            <div class="card-image">🍔</div>
+            <h3>Foody website </h3>
+            <p>Informative good looking Page</p>
+            <button onclick="openProject('https://krish-debug-max.github.io/Hunger-house/')">View</button>
+        </div>
+
+        <div id="cardu" class="w">
+            <div class="card-image">🌐</div>
+            <h3>Business Landing Page</h3>
+            <p>Clean landing page with smooth scroll effects </p>
+            <button onclick="openProject(' https://krish-debug-max.github.io/Kunal-Upvc-Window-Service-Center-/')">View</button>
+        </div>
+
+        <div id="cardu" class="v">
+            <div class="card-image">📱</div>
+            <h3>Instagram Reels Pack</h3>
+            <p>Trendy reels with zooms and overlays </p>
+            <button onclick="openProject('https://www.instagram.com/reel/DI4NrOoz44E/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">View</button>
+        </div>
+
+    </div>
+</div>
+
+<div id="contact" class="fade-in">
+    <h3>Let's Build Something Amazing</h3>
+
+    <form id="contact-form" action="https://formspree.io/f/meoyvkpj" method="POST">
+        <label>Name</label><br>
+        <input type="text" name="name" required placeholder="Arush"><br>
+
+        <label>Email</label><br>
+        <input type="email" name="email" required placeholder="abc@gmail.com"><br>
+
+        <label>Message</label><br>
+        <textarea name="message" required placeholder="I got work For you"></textarea><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<footer>
+    <p>© 2024 Krish. All rights reserved. Built with passion.</p>
+</footer>   
+
+<script>
+
+    function toggleMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
     
-    <script>
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+}
 
-    function showMsg(){
-        alert("You’re already accessing this through the website")
+function closeMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('active');
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
     }
+});
 
-    function openProject(link) {
+function showMsg(){
+    alert("You are ON it !")
+}
+
+function openProject(link) {
     window.open(link, "_blank");
-        }
+}
 
-    function openVideo(path) {
+function openVideo(path) {
     window.open(path, "_blank");
-    }
+}
 
 function filterPortfolio(type) {
-    // Select all portfolio cards (your code uses id="cardu" multiple times, so we target them by querySelectorAll)
     const cards = document.querySelectorAll("#cardu");
 
     cards.forEach(card => {
-        // "all" → show everything
         if (type === "all") {
             card.style.display = "block";
-        } 
-        // match class → show only selected type
-        else if (card.classList.contains(type)) {
+        } else if (card.classList.contains(type)) {
             card.style.display = "block";
-        } 
-        // hide others
-        else {
+        } else {
             card.style.display = "none";
         }
     });
 }
 
-    
-// ------------ PAGE LOAD ANIMATION -------------
 window.addEventListener("load", () => {
     document.body.classList.add("page-loaded");
 });
 
-// ------------ SCROLL ANIMATION -------------
 const scrollElements = document.querySelectorAll(".scroll-animate");
 
 const observer = new IntersectionObserver((entries) => {
@@ -183,9 +212,7 @@ const observer = new IntersectionObserver((entries) => {
 
 scrollElements.forEach(el => observer.observe(el));
 
-
 </script>
 
-
-    </body>
+</body>
 </html>
