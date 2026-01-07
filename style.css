@@ -56,7 +56,7 @@ a{
 
 header{
     background: var(--bg-dark);
-    padding: 0px 20px;  /* ADD padding */
+    padding: 5px 20px;  /* ADD padding */
     align-items: center;
     display: flex;
     border-bottom: 1px solid var(--bg-card);
